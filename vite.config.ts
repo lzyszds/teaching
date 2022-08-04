@@ -11,7 +11,9 @@ const baseUrl = {
 // https://vitejs.dev/config/
 export default ({ mode }) => defineConfig({
   plugins: [
-    vue(),
+    vue({
+     reactivityTransform:true
+    }),
   ],
   base: baseUrl[mode],
   resolve: {
@@ -21,6 +23,8 @@ export default ({ mode }) => defineConfig({
     }
   },
   server: {
+    port: 1024,
+    // 是否开启 https
     proxy: {
       // '/api': {
       //   target: 'https://c.m.163.com/ug/api/wuhan/app/data/list-total',

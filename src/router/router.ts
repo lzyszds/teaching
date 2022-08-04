@@ -10,6 +10,11 @@ const routes: Array<RouteRecordRaw> = [
     name: "001",
     component: () => import("src/page/001/index.vue"),
   },
+  {
+    path: "/002",
+    name: "002",
+    component: () => import("src/page/002/index.vue"),
+  },
 ];
 const router = createRouter({
   history: createWebHashHistory(),
