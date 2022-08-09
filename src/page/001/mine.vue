@@ -80,6 +80,7 @@ function openBorder(x: any, y: any) {
       })
     })
   }
+  // if()
 }
 const setColor = [
   'color:rgb(0, 0, 0)',

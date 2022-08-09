@@ -17,12 +17,12 @@ const srcList = [
   <div style="display:flex;justify-content: center;">
     <div style="margin-right:30px">
       <img src="/vite.svg" style="width: 100px; height: 100px;cursor: pointer;" alt="重新开始" @click="startAllOverAgain" />
-      <p>重新开始</p>
+      <p style="text-align:center">重新开始</p>
     </div>
     <div>
       <el-image style="width: 100px; height: 100px" src="/vue.svg" :preview-src-list="srcList" :initial-index="4"
         fit="cover" />
-      <p>获取提示</p>
+      <p style="text-align:center">获取提示</p>
     </div>
   </div>
   <Mines v-if="Again" />

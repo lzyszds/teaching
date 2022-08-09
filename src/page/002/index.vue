@@ -82,9 +82,17 @@ onMounted(() => {
 
 <template>
   <div>
-    <canvas style="border:4px solid #8788" width="800" height="800" ref="el"></canvas>
+    <canvas width="800" height="800" ref="el"></canvas>
   </div>
 </template>
 
 <style scoped>
+div {
+  width: 100%;
+  text-align: center;
+}
+
+div canvas {
+  border: 4px solid #8788;
+}
 </style>
